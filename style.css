@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.meet-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#main-screen {
+    width: 1000px;
+    height: 600px;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+video#s1 {
+    width: 100%;
+    height: 100%;
+}
+
+#main-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999 !important;
+}
+.controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    z-index: 1000 !important;
+}
+.controls button {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    background-color: tomato;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+.controls button:hover {
+    transition: 0.3s;
+    background-color: white;
+    color: #333;
+}
+.controls button.active {
+    transition: 0.3s;
+    background-color: white;
+    color: #333;
+}
+
+#caller-screen {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(214, 47, 47);
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: block;
+}
+
+#caller-screen.active {
+    display: none;
+}
+
+#caller-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main-video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+
+.call-manage{
+    position: fixed;
+    background: white;
+    padding: 10px;
+    left: 0;
+    top: 100px;
+}
+.call-manage button{
+    display: block;
+    font-size: 16px;
+    background-color: salmon;
+    color: white;
+    padding: 2px 5px;
+}
+.call-manage textarea{
+    height: 50px;
+    width: 150px;
+ 
+}

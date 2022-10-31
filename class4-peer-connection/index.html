@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- webrtc till peerconnection basics -->
+
+
+<body>
+
+    <div class="meet-area">
+        <div id="main-screen" class="screen">
+            <video autoplay id="s1"></video>
+
+            <div id="caller-screen">
+                <video autoplay id="s2"></video>
+            </div>
+
+            <div class="controls">
+                <button class="meet-btn active" id="camBtn"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+                <button class="meet-btn"><i class="fa fa-phone" aria-hidden="true"></i> </button>
+                <button id="micBtn" class=""> <i class="fa fa-microphone" aria-hidden="true"></i></button>
+                <button class="meet-btn" id="screenShareBtn"><i class="fa fa-desktop" aria-hidden="true"></i> </button>
+                <button class="meet-btn"><i class="fa fas fa-ellipsis-h" aria-hidden="true"></i> </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="call-manage">
+        <textarea id="create-offer-sdp"></textarea>
+        <button id="create-offer">Create offer</button>
+
+        <hr>
+        <textarea id="create-answer-sdp"></textarea>
+        <button id="create-answer">Create answer</button>
+
+        <hr>
+        <textarea id="add-answer-sdp"></textarea>
+        <button id="add-answer">Add answer</button>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
